@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<bank>
-<employe>
-<id> 105</id>
-<name>mahnoor</name>
-<salary>50k</salary>
-</employe>
-<employe>
-<id> 120</id>
-<name>neha</name>
-<salary>50k</salary>
-</employe>
-</bank>
-<aphospital>
-<patient>
-<name>mahnoor</name>
-<age>20</age>
-<disease>fever</disease>
-<date>20 april 2022</date>
-</patient>
-<patient>
-<name>neha</name>
-<age>19</age>
-<disease>flu</disease>
-<date>7 july 2022</date>
-</patient>
-<patient>
-<name>urooj</name>
-<age>21</age>
-<disease>headache</disease>
-<date>1 oct 2022</date>
-</patient>
 
- </aphospital>
+<!DOCTYPE Ap-Hospital[
+<!ELEMENT Ap-Hospital (patient)>
+<!ELEMENT patient (age,disease,date)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT disease (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+]>
+
+<Ap-Hospital>
+<patient id="Maha">
+<age>21</age>
+<disease>Fever</disease>
+<date>2022-10-1</date>
+ </patient>
+<patient id="Neha">
+ <age>61</age>
+ <disease>Headache</disease>
+ <date>2022-16-1</date>
+ </patient>
+ <patient id="Urooj">
+  <age>90</age>
+ <disease>flu</disease>
+  <date>2022-20-1</date>
+  </patient>
+</Ap-Hospital>
   
 
